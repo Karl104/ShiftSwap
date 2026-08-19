@@ -11,5 +11,9 @@ public class User
 
     public DateTimeOffset CreatedAt { get; set; } = DateTimeOffset.UtcNow;
 
+    public UserRole Role { get; set; } = UserRole.Employee;
+
+    public ICollection<Shift> Shifts { get; set; } = new List<Shift>();
+
 }
 
