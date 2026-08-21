@@ -11,4 +11,5 @@ public class AppDbContext : DbContext
     }
     public DbSet<User> Users => Set<User>();
     public DbSet<Shift> Shifts => Set<Shift>();
+    public DbSet<SwapRequest> SwapRequests => Set<SwapRequest>();
 }
